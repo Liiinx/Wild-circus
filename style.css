@@ -1,0 +1,310 @@
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+/* For mobile phones: */
+[class*="col-"] {
+    width: 100%;
+}
+@media only screen and (min-width: 600px) {
+    /* For tablets: */
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+}
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+}
+body
+{
+    font-family: Arial,sans-serif;
+    font-size: 17px;
+    background-color: #DDDFDE;
+}
+ul
+{
+    list-style: none;
+}
+a
+{
+    text-decoration: none;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+h1, h2
+{
+    font-family: "Amatic SC", serif;
+}
+h2
+{
+    font-size: 50px;
+    text-align: center;
+    color: #333333;
+}
+
+p
+{
+    text-align: justify;
+}
+
+
+/* header */
+
+header
+{
+    height : 150px;
+    background-color: #F9A106;
+    /*background: linear-gradient(to right, red, yellow);*/
+}
+header h1
+{
+    font-size: 60px;
+    color: #333333;
+    line-height: 50px;
+}
+header img
+{
+    max-height: 100px;
+    float: left;
+}
+header nav
+{
+    float: right;
+    margin-top: 30px;
+}
+header nav ul
+{
+    float: right;
+}
+header nav ul li
+{
+    float: left;
+    margin-right: 20px;
+}
+header nav ul li a
+{
+    color: #333333;
+    text-transform: uppercase;
+    font-family: "Amatic SC", serif;
+    font-weight: bold;
+    font-size: 35px;
+}
+header nav ul li a:hover
+{
+    color: #FFF;
+}
+
+@media only screen and (max-width: 600px) {
+    header{
+        height : 350px;
+    }
+    header nav{
+        margin-top: 0px;
+    }
+    .logo{
+        text-align: center;
+    }
+    header img{
+        margin: 0 auto;
+        float: none;
+    }
+    header nav ul
+    {
+        float: none;
+    }
+    header nav ul li{
+        float: none;
+        margin-right: 0px;
+        text-align: center;
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+
+    header nav ul li a {
+        font-size: 30px;
+    }
+    header img {
+        max-height: 60px;
+    }
+    header h1{
+        font-size: 40px;
+        line-height: 32px;
+    }
+}
+
+
+/* section performance */
+
+#Performances
+{
+    background-color: #DDDFDE;
+}
+#menu img
+{
+    border-radius: 0.5em;
+    margin-top: 10px;
+    max-height: 260px;
+    width: 100%;
+}
+
+
+
+
+/* About us */
+
+@media only screen and (min-width: 768px) {
+    #About
+    {
+        background-image: url(http://www.lafermedubuisson.com/media/fdb/173818-nouveau-cirque-du-vietnam_1500x794_1.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+
+    }
+    .textcolor
+    {
+        color: white;
+    }
+    .righttext
+    {
+        float: right;
+    }
+}
+
+/* section Prices tableau */
+
+#Prices
+{
+    background-color: #DDDFDE;
+}
+
+table
+{
+    width: 100%;
+    border-collapse: collapse;
+    border-color: #fff;
+    background-color: #151515;
+    margin: 20px auto;
+}
+td, th
+{
+    border: 4px solid #DDDFDE;
+    text-align: center;
+    width: 100px;
+    color: #fff;
+    padding: 15px;
+}
+td:hover, th:hover
+{
+    background-color: #DDDFDE;
+    color: #000;
+}
+.border
+{
+    background-color: #DDDFDE;
+}
+
+/* Contact us */
+
+#Contact p
+{
+    text-align: center;
+    margin: 2em 0;
+}
+
+input, textarea
+{
+    margin-bottom: 15px;
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+}
+textarea
+{
+    vertical-align: top;
+    resize: vertical;
+    height: 15em;
+}
+.button input
+{
+    font-weight: bold;
+    cursor: pointer;
+}
+.button input:hover
+{
+    color: #fff;
+    background-color: #151515;
+    border: #fff;
+}
+
+
+.videoWrapper {
+    position: relative;
+    padding-bottom: 30%; /* 16:9 */
+}
+.videoWrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+}
+
+/* footer */
+
+footer
+{
+    background-color: #F9A106;
+}
+.textfoot p
+{
+    text-align: center;
+    font-size: 18px;
+    padding: 10px;
+    color: #333333;
+}
+.textfoot p a
+{
+    color: #333333;
+}
+.textfoot p a:hover
+{
+    color: #fff;
+}
